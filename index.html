@@ -43,11 +43,12 @@
 <script src="js/marked.js"></script>
 <script src="js/zepto.min.js"></script>
 <script>
-    var post = window.location.search.substring(1);
-    if (post == '') post = 'index';
+    var dressMarkdownUrl = 'dress/index.md';
     $('#text').html('loading...');
-    $.get('dress/index.md', function (data) {
+    $.get(dressMarkdownUrl, function (data) {
+        marked.baseUrl = dressMarkdownUrl;
         $('#text').html(marked(data));
+        marked.baseUrl = null;// reset
     });
 </script>
 
