@@ -24,7 +24,7 @@
 <div class="container">
     <div class="row" style="background: #FFFFFF;">
         <div class="col-md-9">
-            <div id="text"></div>
+            <div id="dress_shower" style="max-width: 100%;"></div>
             <div id="disqus_thread" class="hidden-print"></div>
         </div>
         <div class="col-md-3">
@@ -44,10 +44,10 @@
 <script src="js/zepto.min.js"></script>
 <script>
     var dressMarkdownUrl = 'dress/index.md';
-    $('#text').html('loading...');
+    $('#dress_shower').html('loading...');
     $.get(dressMarkdownUrl, function (data) {
         marked.defaults.baseUrl = dressMarkdownUrl;
-        $('#text').html(marked(data));
+        $('#dress_shower').html(marked(data));
         marked.defaults.baseUrl = null;// reset
     });
 </script>
