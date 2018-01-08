@@ -48,7 +48,7 @@
     $.get(dressMarkdownUrl, function (data) {
         marked.baseUrl = dressMarkdownUrl;
         $('#text').html(marked(data));
-        marked.baseUrl = null;// reset
+//        marked.baseUrl = null;// reset
     });
 </script>
 
