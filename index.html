@@ -46,9 +46,9 @@
     var dressMarkdownUrl = 'dress/index.md';
     $('#text').html('loading...');
     $.get(dressMarkdownUrl, function (data) {
-        marked.baseUrl = dressMarkdownUrl;
+        marked.defaults.baseUrl = dressMarkdownUrl;
         $('#text').html(marked(data));
-//        marked.baseUrl = null;// reset
+        marked.defaults.baseUrl = null;// reset
     });
 </script>
 
