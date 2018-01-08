@@ -50,6 +50,6 @@
     if (post == '') post = 'index';
     $('#text').html('loading...');
     $.get('dress/index.md', function (data) {
-        $('#text').html(markdown.toHTML(data));
+        $('#text').html(Markdown.toHTML(data));
     });
 </script>
