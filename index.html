@@ -40,14 +40,14 @@
 </div>
 
 <!-- code -->
-<script src="js/markdown.js"></script>
+<script src="js/marked.js"></script>
 <script src="js/zepto.min.js"></script>
 <script>
     var post = window.location.search.substring(1);
     if (post == '') post = 'index';
     $('#text').html('loading...');
     $.get('dress/index.md', function (data) {
-        $('#text').html(Markdown.toHTML(data));
+        $('#text').html(marked(data));
     });
 </script>
 
