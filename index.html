@@ -11,7 +11,6 @@
         body {
             font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
             background: #DBD3D8;
-            max-width: 100%;
         }
 
         h1 {
@@ -25,7 +24,26 @@
 <div class="container">
     <div class="row" style="background: #FFFFFF;">
         <div class="col-md-9">
-            <div id="dress_shower" style="max-width: 100%;"></div>
+            <div id="dress_shower" style="max-width: 100%;">
+                <a href="dress/img/pic_01_XL_z.jpg">
+                    <img src="dress/img/pic_01_XL_z.jpg" alt="" style="width:100%">
+                </a>
+                <a href="dress/img/pic_01_XL_f.jpg">
+                    <img src="dress/img/pic_01_XL_f.jpg" alt="" style="width:100%">
+                </a>
+                <a href="dress/img/pic_02_XL_z.jpg">
+                    <img src="dress/img/pic_02_XL_z.jpg" alt="" style="width:100%">
+                </a>
+                <a href="dress/img/pic_02_XL_f.jpg">
+                    <img src="dress/img/pic_02_XL_f.jpg" alt="" style="width:100%">
+                </a>
+                <a href="dress/img/pic_03_L_z.jpg">
+                    <img src="dress/img/pic_03_L_z.jpg" alt="" style="width:100%">
+                </a>
+                <a href="dress/img/pic_03_L_f.jpg">
+                    <img src="dress/img/pic_03_L_f.jpg" alt="" style="width:100%">
+                </a>
+            </div>
             <div id="disqus_thread" class="hidden-print"></div>
         </div>
         <div class="col-md-3">
@@ -41,17 +59,17 @@
 </div>
 
 <!-- code -->
-<script src="js/marked.js"></script>
+<!--<script src="js/marked.js"></script>-->
 <script src="js/zepto.min.js"></script>
-<script>
-    var dressMarkdownUrl = 'dress/index.md';
-    $('#dress_shower').html('loading...');
-    $.get(dressMarkdownUrl, function (data) {
-        marked.defaults.baseUrl = dressMarkdownUrl;
-        $('#dress_shower').html(marked(data));
-        marked.defaults.baseUrl = null;// reset
-    });
-</script>
+<!--<script>-->
+    <!--var dressMarkdownUrl = 'dress/index.md';-->
+    <!--$('#dress_shower').html('loading...');-->
+    <!--$.get(dressMarkdownUrl, function (data) {-->
+        <!--marked.defaults.baseUrl = dressMarkdownUrl;-->
+        <!--$('#dress_shower').html(marked(data));-->
+        <!--marked.defaults.baseUrl = null;// reset-->
+    <!--});-->
+<!--</script>-->
 
 </body>
 </html>
